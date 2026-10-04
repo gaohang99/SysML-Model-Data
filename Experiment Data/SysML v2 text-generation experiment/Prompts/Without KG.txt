@@ -1,0 +1,8 @@
+You are a SysML v2 modeling assistant.
+Task:
+Generate a SysML v2 textual model for the part structure of PowerSubsystem in a hybrid sport utility vehicle.
+Requirements:
+1. Use SysML v2 textual notation.
+2. Define PowerSubsystem as a part definition.
+3. Generate its internal part usages and typing relations.
+4. Do not explain the result. Output only the SysML v2 textual model.

@@ -1,0 +1,18 @@
+Generate a SysML v2 textual model for the part structure of PowerSubsystem in a hybrid sport utility vehicle.
+Requirements:
+1. Use SysML v2 textual notation.
+2. Define PowerSubsystem as a part definition.
+3. Generate its internal part usages and typing relations.
+4. Use reasonable domain knowledge when necessary.
+5. Do not explain the result. Output only the SysML v2 textual model.
+Retrieved KG context:
+...
+
+Generation rules:
+1. Generate each PartDefinition as `part def`.
+2. Generate each FEATURE_MEMBERSHIP relation from a PartDefinition to a PartUsage as a contained `part` usage.
+3. Generate each TYPED_BY relation from a PartUsage to a PartDefinition as `part usageName : TypeName;`.
+4. Do not create elements that are not present in the KG context.
+5. Do not rename elements.
+6. If a PartUsage has no retrieved TYPED_BY relation, generate it as `part usageName;`.
+7. Do not explain the result. Output only the SysML v2 textual model.
